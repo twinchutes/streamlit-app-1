@@ -7,7 +7,7 @@ st.write('Movie review sentiment analysis with Multinomial Naive Bayes')
 @st.cache_data
 def load_model():
     '''loads the pre-trained model and target names.'''
-    model = joblib.load('sentiment_analysis.pkl')
+    model = joblib.load('model.pkl')
     return model
 
 model = load_model()
